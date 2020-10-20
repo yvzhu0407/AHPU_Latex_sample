@@ -1,0 +1,62 @@
+%论文版芯大小一般应为145mm×210mm（包括页眉及页码则为145mm×230mm）
+%页码在版芯下边线之下隔行居中放置；
+%% 左右
+\setlength{\textwidth}{14.5cm}
+\setlength{\oddsidemargin}{0.71cm}   % 左边 3.25cm=0.71+2.54
+\setlength{\evensidemargin}{0.71cm}
+%  上下
+\setlength{\topmargin}{0.42cm}       % 3.3=2.54+0.76
+\setlength{\headheight}{0.80cm}      % 0.8
+\setlength{\headsep}{0.40cm}         % 0.4
+\setlength{\textheight}{21.0cm}     % 21.0
+\setlength{\footskip}{1.1cm}        %1.1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 重定义字体命令
+% 注意win2000,没有 simsun,　最好到网上找一个
+% 一些字体是office2000 带的
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\song}{\CJKfamily{song}}		% 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}				% 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}			% 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\CJKfamily{hei}}			% 黑体   (Windows自带simhei.ttf)
+\newcommand{\li}{\CJKfamily{li}}				% 隶书   (Windows自带simli.ttf)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 重定义字号命令
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}		% 一号, 1.倍行距
+\newcommand{\erhao}{\fontsize{22pt}{22pt}\selectfont}		% 二号, 1.倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}		% 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{16pt}\selectfont}	% 三号, 1.倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{15pt}\selectfont}	% 小三, 1.倍行距
+\newcommand{\sihao}{\fontsize{14pt}{14pt}\selectfont}		% 四号, 1.0倍行距
+\newcommand{\banxiaosi}{\fontsize{13pt}{13pt}\selectfont}	% 半小四, 1.0倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{12pt}\selectfont}		% 小四, 1.倍行距
+\newcommand{\dawuhao}{\fontsize{11.5pt}{11.5pt}\selectfont}% 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}	% 五号, 单倍行距
+\newcommand{\xiaowu}{\fontsize{9.5pt}{9.5pt}\selectfont}		% 五号, 单倍行距
+\newcommand{\banbanxiaosi}{\fontsize{12pt}{12pt}\selectfont}% 半半小四, 1.0倍行距
+
+%%%%%%章节标题为“第1章”的形式
+\renewcommand\chaptername{\CJKprechaptername~\thechapter~\CJKchaptername}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%定义段落章节的标题和目录项的格式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{secnumdepth}{4} \setcounter{tocdepth}{2}
+
+\titleformat{\chapter}[hang]{\xiaoer\bf\filcenter\hei}{\xiaoer\chaptertitlename}{18pt}{\xiaoer}
+\titlespacing{\chapter}{0pt}{8pt}{16pt}
+
+\titleformat{\section}[hang]{\song\sf\xiaosan}{\xiaosan\thesection}{0.5em}{}
+\titlespacing{\section}{0pt}{13pt}{13pt}
+\titleformat{\subsection}[hang]{\song\sf\sihao}{\sihao\thesubsection}{0.5em}{}
+
+\titlespacing{\subsection}{0pt}{8pt}{7pt}
+
+\titleformat{\subsubsection}[runin]{\hei\sf\xiaosi}{\thesubsubsection}{0.5em}{}[\;\;]
+\titlespacing{\subsubsection}{0pt}{3pt}{2pt}
+
+
+
+

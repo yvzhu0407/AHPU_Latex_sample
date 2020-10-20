@@ -1,0 +1,40 @@
+\documentclass[a4paper,AutoFakeBold,12pt,twoside]{ahputhesis}
+\thesistitle{题目}{TITLE}
+\cnkeyword{latex}
+\enkeyword{latex}
+\begin{document}
+\pagestyle{frontmatter}
+\begin{cnabstract}
+这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。这是一段中文摘要。
+\end{cnabstract}
+\begin{enabstract}
+This is a paragraph of abstract!This is a paragraph of abstract!This is a paragraph of abstract!This is a paragraph of abstract!This is a paragraph of abstract!This is a paragraph of abstract!
+\end{enabstract}
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\pagestyle{mainmatter}
+\chapter*{前言}
+\addcontentsline{toc}{chapter}{前言}%运行两次可将此行添加至目录中
+\chapter{我}
+\section{爱}
+\subsection{程序}
+\subsection{荣华}
+\chapter{自}
+\chapter{已}
+\begin{table}
+    \centering
+    \caption{\LaTeX{}中的空格}
+    \label{tab-space}
+    \begin{tabular}{l|l}
+        \hline
+        \verb|\qquad| & 当前字体下2个字母“M”的宽度 \\ \hline
+        \verb|\quad|  & 当前字体下1个字母“M”的宽度 \\ \hline
+        \verb|\ |     & 当前字体下1/3个字母“M”的宽度（斜杠后是一个空格） \\ \hline
+        \verb|\;|     & 当前字体下2/7个字母“M”的宽度 \\ \hline
+        \verb|\,|     & 当前字体下1/6个字母“M”的宽度 \\ \hline
+        \verb|\!|     & {\bf 缩进}当前字体下1/6个字母“M”的宽度 \\ \hline
+    \end{tabular}
+\end{table}
+\end{document}
